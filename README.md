@@ -93,7 +93,7 @@ npm install yakuhanjp-ex
 
 1.  利用するフォントファイルへのリンクを個別に取得（CDN の場合）
 
-- [YakuHanJP-EX-Emotion](https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.0/dist/fonts/YakuHanJP-EX-Emotion/)
+- [YakuHanJP-EX-Emotion](https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.1/dist/fonts/YakuHanJP-EX-Emotion/)
 
 2.  CSS 内に font-face を記述
 
