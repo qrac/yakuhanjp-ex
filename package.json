@@ -1,7 +1,7 @@
 {
   "name": "yakuhanjp-ex",
   "description": "Yakumono-Hankaku Only Web Fonts (Experimental version)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "minify": "cleancss -o dist/css/yakuhanjp-ex-emotion.min.css dist/css/yakuhanjp-ex-emotion.css"
   },

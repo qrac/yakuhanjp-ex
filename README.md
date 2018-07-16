@@ -8,6 +8,8 @@
 
 ### YakuHanJP-EX-Emotion
 
+![YakuHanJP-EX-Emotion IMAGE](https://i.gyazo.com/a6c553458628caab5ed2c6ccf79812ed.png)
+
 YakuHanJP から感嘆符・疑問符を抜いたもの。Emotion とは無感情の意を表しています。ゴシック体のみ制作してみました。
 
 ## Valuation
@@ -47,7 +49,7 @@ jsDelivr で配信している CSS ファイルへのリンクを HTML 内に記
 
 ```html
 // YakuHanJP-EX-Emotion
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.0/dist/css/yakuhanjp-ex-emotion.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.1/dist/css/yakuhanjp-ex-emotion.min.css">
 ```
 
 ### [npm][link-npm]
