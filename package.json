@@ -1,0 +1,32 @@
+{
+  "name": "yakuhanjp-ex",
+  "description": "Yakumono-Hankaku Only Web Fonts (Experimental version)",
+  "version": "0.1.0",
+  "scripts": {
+    "minify": "cleancss -o dist/css/yakuhanjp-ex-emotion.min.css dist/css/yakuhanjp-ex-emotion.css"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "yakuhan",
+    "yakumono",
+    "hankaku",
+    "japanese"
+  ],
+  "homepage": "https://github.com/qrac/yakuhanjp-ex",
+  "bugs": {
+    "url": "https://github.com/qrac/yakuhanjp-ex/issues"
+  },
+  "author": {
+    "name": "Qrac",
+    "web": "https://twitter.com/Qrac_JP"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/yakuhanjp-ex.git"
+  },
+  "license": "(OFL-1.1 AND MIT)",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.11"
+  }
+}
