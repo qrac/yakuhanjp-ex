@@ -12,6 +12,10 @@
 
 YakuHanJP から感嘆符・疑問符を抜いたもの。Emotion とは無感情の意を表しています。ゴシック体のみ制作してみました。
 
+### YakuHanJP-EX-CDN-SCSS
+
+SCSS ファイルで CDN フォントファイルを呼び出すバージョンです。`npm install` してプロジェクトの SCSS ファイルから各 SCSS ファイルをインポートします。
+
 ## Valuation
 
 ### Include Fonts
@@ -25,7 +29,7 @@ YakuHanJP から感嘆符・疑問符を抜いたもの。Emotion とは無感�
 、。〈〉《》「」『』【】〔〕・（）：；［］｛｝
 ```
 
-※バグ回避のため、全てのフォントに `.notdef` `space` `ellipsis` が含まれています
+※バグ回避のため、すべてのフォントに `.notdef` `space` `ellipsis` が含まれています
 
 ### Font Weight
 
