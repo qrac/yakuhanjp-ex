@@ -1,9 +1,10 @@
 {
   "name": "yakuhanjp-ex",
   "description": "Yakumono-Hankaku Only Web Fonts (Experimental version)",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
-    "minify": "cleancss -o dist/css/yakuhanjp-ex-emotion.min.css dist/css/yakuhanjp-ex-emotion.css"
+    "minify:science": "cleancss -o dist/css/yakuhanjp-ex-science.min.css dist/css/yakuhanjp-ex-science.css",
+    "minify:emotion": "cleancss -o dist/css/yakuhanjp-ex-emotion.min.css dist/css/yakuhanjp-ex-emotion.css"
   },
   "keywords": [
     "font",
@@ -27,6 +28,6 @@
   },
   "license": "(OFL-1.1 AND MIT)",
   "devDependencies": {
-    "clean-css-cli": "^4.1.11"
+    "clean-css-cli": "^4.3.0"
   }
 }

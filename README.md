@@ -4,38 +4,24 @@
 
 "Yaku Han JP EX"は、"[Yaku Han JP][link-yakuhanjp-repo]"の実験的なバージョンです。
 
-## Detail
-
-### YakuHanJP-EX-Emotion
-
-![YakuHanJP-EX-Emotion IMAGE](https://i.gyazo.com/a6c553458628caab5ed2c6ccf79812ed.png)
-
-YakuHanJP から感嘆符・疑問符を抜いたもの。Emotion とは無感情の意を表しています。ゴシック体のみ制作してみました。
-
-### YakuHanJP-EX-CDN-SCSS
-
-SCSS ファイルで CDN フォントファイルを呼び出すバージョンです。`npm install` してプロジェクトの SCSS ファイルから各 SCSS ファイルをインポートします。
-
-## Valuation
-
-### Include Fonts
-
-- YakuHanJP-EX-Emotion
-
-内包する文字はそれぞれ以下の通りです。
+## Install
 
 ```
-// YakuHanJP-EX-Emotion
-、。〈〉《》「」『』【】〔〕・（）：；［］｛｝
+npm install yakuhanjp-ex
 ```
 
-※バグ回避のため、すべてのフォントに `.notdef` `space` `ellipsis` が含まれています
+## YakuHanJP-EX-Science
 
-### Font Weight
+![YakuHanJP-EX-Science IMAGE](https://i.gyazo.com/314f88eb025d2a9ced9103ac75014332.png)
 
-ウェイトは 7 段階。付属の CSS では以下の font-weight で指定できます。ベースフォント毎にウエイト・ファイル名が若干異なるため、当ライブラリ内のファイル名もそれぞれのベースフォントに準じています。
+YakuHanJP に理工系文章のカンマ `，` とピリオド `．` を加えたバージョンです（ゴシック体のみ）。
 
-#### YakuHanJP-EX-Emotion
+```
+// YakuHanJP-EX-Science
+，．、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝
+```
+
+※バグ回避のため、`.notdef` `space` `ellipsis` が含まれています
 
 - font-weight: 100; // Thin
 - font-weight: 200; // Light
@@ -45,61 +31,59 @@ SCSS ファイルで CDN フォントファイルを呼び出すバージョン�
 - font-weight: 700; // Bold
 - font-weight: 900; // Black
 
-## Use
-
-### [CDN][link-jsdelivr]
-
-jsDelivr で配信している CSS ファイルへのリンクを HTML 内に記述するだけで全ウェイトのフォントを利用できます。
-
 ```html
-// YakuHanJP-EX-Emotion
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.1/dist/css/yakuhanjp-ex-emotion.min.css">
-```
-
-### [npm][link-npm]
-
-npm コマンドで任意のプロジェクトにインストールできます。
-
-```
-npm install yakuhanjp-ex
-```
-
-### Download
-
-1.  データを[ダウンロード][link-download]
-2.  dist フォルダ内の「css」「fonts」を制作サイトに配置
-3.  HTML 内で CSS を読み込む
-
-- YakuHanJP-EX-Emotion
-  - yakuhanjp-ex-emotion.min.css
-
-4.  CSS でフォントを適応
-
-- YakuHanJP-EX-Emotion
-  - 「YakuHanJP-EX-Emotion」
-
-```html
-// YakuHanJP-EX-Emotion
-<link rel="stylesheet" href="dist/css/yakuhanjp-ex-emotion.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.3.0/dist/css/yakuhanjp-ex-science.min.css"
+/>
 ```
 
 ```css
-// YakuHanJP-EX-Emotion
+.yakuhanjp {
+  font-family: YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium",
+    sans-serif;
+}
+```
+
+## YakuHanJP-EX-Emotion
+
+![YakuHanJP-EX-Emotion IMAGE](https://i.gyazo.com/a6c553458628caab5ed2c6ccf79812ed.png)
+
+YakuHanJP から感嘆符・疑問符を抜いたもの（ゴシック体のみ）。Emotion とは無感情の意を表しています。
+
+```
+、。〈〉《》「」『』【】〔〕・（）：；［］｛｝
+```
+
+※バグ回避のため、`.notdef` `space` `ellipsis` が含まれています
+
+- font-weight: 100; // Thin
+- font-weight: 200; // Light
+- font-weight: 300; // DemiLight
+- font-weight: 400; // Regular
+- font-weight: 500; // Medium
+- font-weight: 700; // Bold
+- font-weight: 900; // Black
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.1/dist/css/yakuhanjp-ex-emotion.min.css"
+/>
+```
+
+```css
 .yakuhanjp-ex-emotion {
   font-family: YakuHanJP-EX-Emotion, "Hiragino Sans", Meiryo,
     "Yu Gothic Medium", sans-serif;
 }
 ```
 
-## Custom
+## ~~YakuHanJP-EX-CDN-SCSS~~
 
-### Font face
+~~SCSS ファイルで CDN フォントファイルを呼び出すバージョンです。`npm install` してプロジェクトの SCSS ファイルから各 SCSS ファイルをインポートします。~~
 
-1.  利用するフォントファイルへのリンクを個別に取得（CDN の場合）
-
-- [YakuHanJP-EX-Emotion](https://cdn.jsdelivr.net/npm/yakuhanjp-ex@0.1.1/dist/fonts/YakuHanJP-EX-Emotion/)
-
-2.  CSS 内に font-face を記述
+SCSS ファイル での CDN 読み込みは、[本家 Yaku Han JP][link-yakuhanjp-repo] で対応しました。そちらをお使いください。
 
 ## Support
 
